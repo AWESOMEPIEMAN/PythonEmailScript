@@ -12,7 +12,6 @@ print('Sending email....')
 
 try:
     server = smtplib.SMTP('smtp.gmail.com', 587)
-
     context = ssl.create_default_context()
     server.starttls(context=context)
 
